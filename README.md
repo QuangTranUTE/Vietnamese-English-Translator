@@ -16,6 +16,7 @@ jjl
 ## Description of main parts of this repository
 #### "datasets" folder
 
-
+#### "train.py" 
+One-stop source code. You can file the preprocessing code, model creating code...
 
 
