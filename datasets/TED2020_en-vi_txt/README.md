@@ -1,5 +1,7 @@
-Download the training data [here](google.com).
-The training data is OPUS TED2020v1 data, can also be find here.
+# Instruction
+Download the training data [here](google.com). 
+The training data is OPUS TED2020v1 data, can also be find here.  
+# Instruction to use your own data
 If you want to train a translator for different language pair, find and prepare relavent data as the following steps:
  1. step 1
  2. sajfas
