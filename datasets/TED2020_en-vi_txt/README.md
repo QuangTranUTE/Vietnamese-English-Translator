@@ -1,4 +1,13 @@
- Corpus Name: TED2020
+Download the training data [here](google.com).
+The training data is OPUS TED2020v1 data, can also be find here.
+If you want to train a translator for different language pair, find and prepare relavent data as the following steps:
+ 1. step 1
+ 2. sajfas
+dsaf 
+
+
+====
+Corpus Name: TED2020
      Package: TED2020.en-vi in Moses format
      Website: http://opus.nlpl.eu/TED2020-v1.php
      Release: v1
