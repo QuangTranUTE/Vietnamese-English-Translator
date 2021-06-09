@@ -2,7 +2,7 @@
 ## What is this?
 This repository contains code for training a neural machine translator as well as a trained model for the Vietnamese-English language pair.
 ## How to use it
-#### *1. Using it as a translator* (like Google Translate, but not that good, of course)
+#### *1. Using it as a translator* (like Google Translate, but not that good of course)
 Simply go to this [Colab](goole.com), input a sentence in Vietnamese and press **Enter** (or click **Translate**).
 [de hinh chup demo colab vo day]
 
@@ -13,10 +13,12 @@ Steps to do:
     hk
     ljl
 jjl
-## Description of main parts of this repository
-#### "datasets" folder
+## Brief info about the model
+The current model (in `train.py`) is a simple encoder-decoder with 4-GRU-layer encoder and decoder. Due to the lack of resources, attention mechanism and bidirectional RNNs have not been used.  
 
-#### "train.py" 
-One-stop source code. You can file the preprocessing code, model creating code...
+The model is trained with the **OPUS TED2020-v1** en-vi data with more than 300.000 pairs of text sequences. See `dataset` folder for details.  
+
+***Note for ones who want to implement attention mechanism:*** due to some bug in the current Tensorflow (version 2.5.0) and Tensorflow Addons (version 0.13 as I have tried), we cannot implement attention mechanism in eager mode. If you wish to, you have to use the subclassing API. 
+
 
 
