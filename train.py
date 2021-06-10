@@ -1,14 +1,14 @@
 ''' 
 A SIMPLE NEURAL MACHINE TRANSLATOR
 Last main update: June 2021
-[github link]
+https://github.com/QuangTranUTE/Vietnamese-English-Translator/
 quangtn@hcmute.edu.vn
 
 INSTRUCTIONS:
     + Run entire code: if you want to train your model from scratch.
-    + Run entire code with load_word_lists=True, load_processed_data=True: if you want to train a new model but already run Part 2 (data are preprocessed). This can save data processing time.
+    + Run entire code with load_word_lists=True, load_processed_data=True: if you want to train a new model but already run Part 2 (i.e., data are preprocessed). This can save data processing time.
     + Run only Part 1 & Part 4: if you already trained (and saved) a model and want to do prediction (translation).
-For other instructions, such as how to prepare your data, please see the github repository given above.
+For other instructions, such as how to prepare the training data, please see the github repository given above.
 
 The code below have been successfully run on a system with:
 Package         version
