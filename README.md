@@ -23,7 +23,7 @@ Please be aware that the training process may take days to finish, depending on 
 
 After training, you can deploy your model on, for example, a Colab as I have done above.  
 
-## Brief info about the model
+## Trained model information
 The model was trained with the [**OPUS TED2020-v1 en-vi text**](https://opus.nlpl.eu/TED2020-v1.php) data with more than 300.000 pairs of text sequences (see `datasets` folder for details). 
 
 The current model (in `train.py`) is a simple encoder-decoder with 4-GRU-layer encoder and decoder. Due to the lack of resources, *attention mechanism* (with *bidirectional RNNs*) have not been used.  
