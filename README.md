@@ -5,7 +5,7 @@
 This repository contains code for training a simple neural machine translator as well as a trained model for the Vietnamese-to-English translator.
 ## How to use it
 #### *1. Using it as a translator* (like Google Translate, but not that good of course)
-Simply go to this [Google Colab](https://colab.research.google.com/drive/1aOFww6iGrD7LoXS0N1AgqTrv0QgsXiRw?usp=sharing), then click **Run cell** (Ctrl-Enter), input a sentence in Vietnamese and click **Translate** (Please be patient since the model is a bit heavy for Colab to handle.).  
+Simply go to this [**Google Colab**](https://colab.research.google.com/drive/1aOFww6iGrD7LoXS0N1AgqTrv0QgsXiRw?usp=sharing), then click **Run cell** (Ctrl-Enter), input a sentence in Vietnamese and click **Translate** (Please be patient since the model is a bit heavy for Colab to handle.).  
 
 ![Demo using the translator on Colab](/resources/demo.PNG "Hope you enjoy this!") 
 
@@ -17,16 +17,22 @@ Steps to do:
     3. Run "train.py" 
 
 You can easily customize the model by changing hyperparameters put at the beginning of code parts (marked with comments `NOTE: HYPERPARAM`) (see `train.py`).  
+
 Please be aware that the training process may take days to finish, depending on your customized model and your computer.  
+
 After training, you can deploy your model on, for example, a Colab as I have done above.  
 
 ## Brief info about the model
-The current model (in `train.py`) is a simple encoder-decoder with 4-GRU-layer encoder and decoder. Due to the lack of resources, attention mechanism and bidirectional RNNs have not been used.  
-Beam search or randomly translation.
+The model was trained with the [**OPUS TED2020-v1 en-vi text**](https://opus.nlpl.eu/TED2020-v1.php) data with more than 300.000 pairs of text sequences (see `datasets` folder for details). 
 
-The model is trained with the **OPUS TED2020-v1** en-vi data with more than 300.000 pairs of text sequences. See `dataset` folder for details.  
+The current model (in `train.py`) is a simple encoder-decoder with 4-GRU-layer encoder and decoder. Due to the lack of resources, *attention mechanism* (with *bidirectional RNNs*) have not been used.  
 
-***Note for ones who want to implement attention mechanism:*** due to some bug in the current Tensorflow (version 2.5.0) and Tensorflow Addons (version 0.13 as I have tried), we cannot implement attention mechanism in eager mode. If you wish to, you have to use the subclassing API. 
+In the future, *beam search* and *random translation* may also be added to improve performance of the model.  
+
+***Note for ones who want to implement attention mechanism:*** due to some bugs in the current Tensorflow (version 2.5.0) and Tensorflow Addons (version 0.13 as I have tried), we cannot implement attention mechanism in eager mode, to the best of my knowledge. So at the moment, you have to use the subclassing API if you wish to get attention mechanism. There are online tutorials with code can help you with that.
+
+
+
 
 
 
