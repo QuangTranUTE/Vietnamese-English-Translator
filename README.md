@@ -1,4 +1,4 @@
-# Simple Vietnamese to English Translator
+# Vietnamese to English Translator
 ## What is this?
 This repository contains code for training a simple neural machine translator as well as a trained model for the Vietnamese-to-English translator.
 ## How to use it
