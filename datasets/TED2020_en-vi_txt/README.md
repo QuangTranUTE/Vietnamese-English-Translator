@@ -1,11 +1,12 @@
-# Instruction
-Download the training data [here](google.com). 
-The training data is OPUS TED2020v1 data, can also be find here.  
+## Training data infomation
+Data used to train the model in the repository can be downloaded [here](https://drive.google.com/file/d/1AiUt7TuIUcVLb3M_iM99yGhJTtuhOB_x/view?usp=sharing). Training data is the en-vi language pair of the [OPUS TED2020v1 data](https://opus.nlpl.eu/TED2020-v1.php). .  
 
-# Instruction to use your own data
-Simply prepare **two text files** containing pair of sentences (or pair of paragraphs) in your source and target language. Each sentence (or paragraph) must be **on one line** (i.e., ended with '\n').  
+## Instruction for using your own data
+In case you would like to make your own translator (for example for a different language pair), you need to provide a proper training dataset.
 
-For example, if you want to make a translator from Vietnamese to English, create a "vi.txt" file (source language samples) and "en.txt" file (target language samples). Below are the first three lines in these two files (data from [OPUS TED2020v1](https://opus.nlpl.eu/TED2020-v1.php)):  
+To prepare the training data, simply create **two text files** containing pair of sentences (or pair of paragraphs) in your source and target language. Each sentence (or paragraph) must be **on one line**, i.e., it must contains **only one** '\n' at the end of the sentence (or paragraph).  
+
+For example, if you want to make a translator from Vietnamese to English as I have done, you need to create a `vi.txt` file (source language data) and `en.txt` file (target language data). Below are the first three lines in these two files (data taken from [OPUS TED2020v1](https://opus.nlpl.eu/TED2020-v1.php)):  
     
     File vi.txt:  
     [line 1] Cám ơn rất nhiều, Chris.  
@@ -17,25 +18,15 @@ For example, if you want to make a translator from Vietnamese to English, create
     [line 2] And it's truly a great honor to have the opportunity to come to this stage twice; I'm extremely grateful.  
     [line 3] I have been blown away by this conference, and I want to thank all of you for the many nice comments about what I had to say the other night.  
 
+Now you can train your model using `train.py`.
 
-If you want to train a translator for different language pair, find and prepare relavent data as the following steps: 
- 1. step 1
- 2. sajfas
-dsaf 
+----
+**Copyright note:** Please follow the requirements of OPUS or any other place you took data from. 
 
-
-====
-Corpus Name: TED2020
-     Package: TED2020.en-vi in Moses format
-     Website: http://opus.nlpl.eu/TED2020-v1.php
-     Release: v1
-Release date: Mon Nov 30 01:54:29 EET 2020
-     License: Please respect the <a href=https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy>TED Talks Usage Policy</a>
-
-This corpus is part of OPUS - the open collection of parallel corpora
-OPUS Website: http://opus.nlpl.eu
-
-Please cite the following article if you use any part of the corpus in your own work: J. Tiedemann, 2012, Parallel Data, Tools and Interfaces in OPUS. In Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC 2012)
-
-This dataset contains a crawl of nearly 4000 TED and TED-X transcripts from July 2020. The transcripts have been translated by a global community of volunteers to more than 100 languages. The parallel corpus is available from https://www.ted.com/participate/translate
+The training data I have used are taken from the OPUS corpus:  
+> Website: http://opus.nlpl.eu
+> 
+> Please cite the following article if you use any part of the corpus in your own work: J. Tiedemann, 2012, Parallel Data, Tools and Interfaces in OPUS. In Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC 2012)
+> 
+> This dataset contains a crawl of nearly 4000 TED and TED-X transcripts from July 2020. The transcripts have been translated by a global community of volunteers to more than 100 languages. The parallel corpus is available from https://www.ted.com/participate/translate
 
