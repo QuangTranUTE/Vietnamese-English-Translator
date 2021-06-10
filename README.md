@@ -34,7 +34,7 @@ In the future, *beam search* and *random translation* may also be added to impro
 ## Training data infomation
 Data used to train the model in the repository can be downloaded [here](https://drive.google.com/file/d/1AiUt7TuIUcVLb3M_iM99yGhJTtuhOB_x/view?usp=sharing). Training data is the en-vi language pair of the [OPUS TED2020v1 data](https://opus.nlpl.eu/TED2020-v1.php).   
 
-**Copyright**
+**Copyright**  
 The training data I have used are taken from the OPUS corpus:  
 > Website: http://opus.nlpl.eu
 > 
