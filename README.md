@@ -16,8 +16,9 @@ Steps to do:
     2. (Optional) Customize the model in "train.py"
     3. Run "train.py" 
 
-Please be aware that the training process may take days to finish, depending on your customized model and your computer.
-After training, you can deploy your model on, for example, a Colab as I have done above.
+You can easily customize the model by changing hyperparameters put at the beginning of code parts (marked with comments `NOTE: HYPERPARAM`) (see `train.py`).  
+Please be aware that the training process may take days to finish, depending on your customized model and your computer.  
+After training, you can deploy your model on, for example, a Colab as I have done above.  
 
 ## Brief info about the model
 The current model (in `train.py`) is a simple encoder-decoder with 4-GRU-layer encoder and decoder. Due to the lack of resources, attention mechanism and bidirectional RNNs have not been used.  
