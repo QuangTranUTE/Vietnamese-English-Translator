@@ -31,6 +31,17 @@ In the future, *beam search* and *random translation* may also be added to impro
 
 ***Note for ones who want to implement attention mechanism:*** due to some bugs in the current Tensorflow (version 2.5.0) and Tensorflow Addons (version 0.13 as I have tried), we cannot implement attention mechanism in eager mode, to the best of my knowledge. So at the moment, you have to use the subclassing API if you wish to get attention mechanism. There are online tutorials with code can help you with that.
 
+## Training data infomation
+Data used to train the model in the repository can be downloaded [here](https://drive.google.com/file/d/1AiUt7TuIUcVLb3M_iM99yGhJTtuhOB_x/view?usp=sharing). Training data is the en-vi language pair of the [OPUS TED2020v1 data](https://opus.nlpl.eu/TED2020-v1.php).   
+
+**Copyright**
+The training data I have used are taken from the OPUS corpus:  
+> Website: http://opus.nlpl.eu
+> 
+> Please cite the following article if you use any part of the corpus in your own work: J. Tiedemann, 2012, Parallel Data, Tools and Interfaces in OPUS. In Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC 2012)
+> 
+> This dataset contains a crawl of nearly 4000 TED and TED-X transcripts from July 2020. The transcripts have been translated by a global community of volunteers to more than 100 languages. The parallel corpus is available from https://www.ted.com/participate/translate
+
 
 
 
