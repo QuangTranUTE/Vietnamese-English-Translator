@@ -1,11 +1,12 @@
 # Vietnamese to English Translator
 
 ## What is this?
-This repository contains code for training a simple neural machine translator as well as a trained model for the Vietnamese-to-English translator.
+This repository contains code for training a simple neural machine translator as well as a trained model for the Vietnamese-to-English translator. 
+
 ## How to use it
-#### *1. Using it as a translator* (like Google Translate, but not that good of course)
+#### *1. Using it as a translator* (like Google Translate, but not that good, of course)
 Simply go to this [**Google Colab**](https://colab.research.google.com/drive/1aOFww6iGrD7LoXS0N1AgqTrv0QgsXiRw?usp=sharing), then click **Run cell** (Ctrl-Enter), input a sentence in Vietnamese and click **Translate** (Please be patient since the model is a bit heavy for Colab to handle.).  
-***\*\*Note: the model is still under training, new (and better) version will be uploaded.\*\****
+***\*\*Note: this is just my hobby project and the model is still under training, hence I think we can't expect much from it. Have fun!\*\****
 
 ![Demo using the translator on Colab](/resources/demo.PNG "Hope you enjoy it!") 
 
