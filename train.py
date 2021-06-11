@@ -50,10 +50,8 @@ def word_to_id(word, vocab_list):
     else:
         return oov_id 
 def id_to_word(id, vocab_list):
-    if id < len(vocab_list):
-        return vocab_list[id]
-    else:
-        return '<unknown word>' # out-of-vocab (oov) word
+    return vocab_list[id]
+
 #endregion
 
 
